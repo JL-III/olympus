@@ -14,7 +14,7 @@ public class BlockBreakListener implements Listener {
 
     public BlockBreakListener(int height) {
         for (double x = -4; x <= 4; x++) {
-            for (double y = 0; y < height; y++) {
+            for (double y = 0; y < height - 1; y++) {
                 for (double z = -4; z <= 4; z++) {
                     protectedSpawn.add(new Location(Bukkit.getWorld("olympus"), x, y, z));
                 }
